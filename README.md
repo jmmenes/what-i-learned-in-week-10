@@ -2,23 +2,34 @@
 
 &nbsp;
 
-## Github Pages
+## Media Queries
 
-https://pages.github.com/#user-site
+The @media rule is used in media queries to apply different styles for different media types/devices.
 
-https://pages.github.com/
+Media queries can be used to check many things, such as:
 
-GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files
+- width and height of the viewport
+- width and height of the device
+- orientation (is the tablet/phone in landscape or portrait mode?)
+- resolution
 
-You can host your site on GitHub's github.io domain or your own custom domain.
+Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.
 
-&nbsp;
+    <style>
 
-## HTML, CSS Review
+    body {
+    background-color: yellow;
+    }
 
-Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+    @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+      }
+    }
 
-Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+    <!-- When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "yellow" -->
+
+    </style>
 
 &nbsp;
 
@@ -29,6 +40,13 @@ The Document Object Model (DOM) is the data representation of the objects that c
 The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
 
 A Web page is a document. This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.
+
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+&nbsp;
+
+The HTML DOM model is constructed as a tree of Objects:
+![DOM TREE](./dom-tree.jpg)
 
 &nbsp;
 
@@ -115,11 +133,9 @@ Events are a part of the Document Object Model (DOM) Level 3 and every HTML elem
 
 Examples
 
-- onclick Event Type
-  This is the most frequently used event type which occurs when a user clicks the left button of his mouse.
+- onclick event type. This is the most frequently used event type which occurs when a user clicks the left button of his mouse.
 
-- onsubmit Event Type
-  onsubmit is an event that occurs when you try to submit a form.
+- onsubmit event type. onsubmit is an event that occurs when you try to submit a form.
 
 &nbsp;
 
